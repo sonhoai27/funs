@@ -802,7 +802,7 @@ body {
 
 .nav-menu {
   margin-left: auto;
-  display: none;
+  display: block;
   background-color: #fff;
   position: relative;
 }
@@ -816,8 +816,7 @@ body {
 .nav-menu__items {
   height: 100%;
   list-style: none;
-  padding: 16px 8px;
-  display: block;
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.71429;
@@ -868,22 +867,10 @@ body {
 }
 
 .nav-menu__item--separator {
-  padding: 0;
-  border: solid #e0e0e0;
-  border-width: 0 0 1px;
-  height: auto;
-  width: 100vw;
-  margin: 12px -8px;
-  pointer-events: none;
-}
-
-@media (min-width: 768px) {
-  .nav-menu__item--separator {
-    height: 3.42857em;
-    width: auto;
-    margin: 0 4px;
-    border-right-width: 1px;
-  }
+  height: 3.42857em;
+  width: auto;
+  margin: 0 4px;
+  border-right-width: 1px;
 }
 
 .nav-menu__item + .nav-menu__item,
@@ -900,15 +887,10 @@ body {
 }
 
 .nav-menu__item + .nav-menu__item--separator {
-  margin-top: 12px;
+  margin-top: 0;
+  margin-left: 4px;
 }
 
-@media (min-width: 768px) {
-  .nav-menu__item + .nav-menu__item--separator {
-    margin-top: 0;
-    margin-left: 4px;
-  }
-}
 
 .nav-menu__item--separator + .nav-menu__item,
 .nav-menu__item--separator + .nav-submenu {
@@ -1511,9 +1493,10 @@ input[type="submit"]:lang(th) {
 }
 
 .banner {
-  background: url("https://fundingsocieties.vn/static/465f70a4b1fd950351f3071814447f51638f85fa48837f91f994c25e2f3d64eb.webp");
-  background-position: center;
+  background: url("./bg.webp");
+  background-position: center bottom;
   background-size: cover;
+  min-height: 60vh;
 }
 
 .card {
@@ -1636,3 +1619,52 @@ input[type="submit"]:lang(th) {
       font-size:16px!important
   }
 }
+
+.borders-1 {
+  border-radius: 8px;
+  position: relative;
+  border: 4px solid $primaryColor;
+  overflow: hidden;
+  z-index: 1;
+  max-width: 80%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  &::before {
+    content: "";
+    background: #000000;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .application-form {
+    font-size: 12px;
+  }
+}
+
+.loader {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #FFF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
