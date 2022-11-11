@@ -79,22 +79,16 @@
             <div class="card">
               <div class="card__content p-6">
                 <img
-                  src="https://fundingsocieties.vn/static/26ae8a676aeb3f39e1677a1388bfb03e0d094a1377e7dd3f7088097cd80df6b9.svg"
+                  src="./assets/1.svg"
                   alt="">
                 <h5 class="text-2xl font-semibold">
-                  Tài Trợ Vốn Mua Hàng Cho Chuỗi Cung Ứng
+                  Tài trợ vốn lưu động dành cho Doanh nghiệp
                 </h5>
-                <ul class="pl-8">
-                  <li class="list-disc">
-                    Ứng trước nguồn vốn cần thiết Mua hàng ngay trả tiền sau.
+                <ul class="mt-4">
+                  <li class="">
+                    NVC cung cấp ngay nguồn vốn dồi dào để giúp doanh nghiệp tiếp cận những cơ hội kinh doanh mới, mở rộng cũng như khẳng định vị thế của mình.
                   </li>
-                  <li class="list-disc">
-                    Cơ hội tiếp cận được nguồn vốn cần thiết để mua được nhiều hàng hơn từ Nhà cung
-                    cấp từ đó tạo doanh thu cao hơn.
-                  </li>
-                  <li class="list-disc">
-                    Các phương án hoàn trả linh hoạt
-                  </li>
+                  
                 </ul>
               </div>
             </div>
@@ -103,13 +97,13 @@
             <div class="card">
               <div class="card__content p-6">
                 <img
-                  src="https://fundingsocieties.vn/static/26ae8a676aeb3f39e1677a1388bfb03e0d094a1377e7dd3f7088097cd80df6b9.svg"
+                  src="./assets/2.svg"
                   alt="">
                 <h5 class="text-2xl font-semibold">
-                  Tài Trợ Công Nợ Từ Khách Hàng / Nhà Mua Hàng
+                  Tài trợ công nợ từ Khách hàng / Nhà mua hàng
                 </h5>
-                <ul class="pl-8">
-                  <li class="list-disc">
+                <ul class="mt-4">
+                  <li class="">
                     NVC cung ứng nguồn vốn giúp doanh nghiệp nhận tiền thanh toán sớm hơn từ các Khách
                     hàng, chuỗi cung ứng mà không cần vướng bận về các khoản công nợ kéo dài.
                   </li>
@@ -122,20 +116,20 @@
             <div class="card">
               <div class="card__content p-6">
                 <img
-                  src="https://fundingsocieties.vn/static/26ae8a676aeb3f39e1677a1388bfb03e0d094a1377e7dd3f7088097cd80df6b9.svg"
+                  src="./assets/3.svg"
                   alt="">
                 <h5 class="text-2xl font-semibold">
-                  Tài Trợ Vốn Mua Hàng Cho Chuỗi Cung Ứng
+                  Tài trợ vốn mua hàng cho Chuỗi cung ứng
                 </h5>
-                <ul class="pl-8">
-                  <li class="list-disc">
+                <ul class="mt-4">
+                  <li class="pb-2 flex">
                     Ứng trước nguồn vốn cần thiết Mua hàng ngay trả tiền sau.
                   </li>
-                  <li class="list-disc">
+                  <li class="pb-2 flex">
                     Cơ hội tiếp cận được nguồn vốn cần thiết để mua được nhiều hàng hơn từ Nhà cung
                     cấp từ đó tạo doanh thu cao hơn.
                   </li>
-                  <li class="list-disc">
+                  <li class="pb-2 flex">
                     Các phương án hoàn trả linh hoạt
                   </li>
                 </ul>
@@ -406,7 +400,7 @@
 
       if (dd < 10) dd = '0' + dd;
       if (mm < 10) mm = '0' + mm;
-      const scriptURL = "https://script.google.com/macros/s/AKfycbzXejhJriUjRAWCkbpALBfgFOMbPJhS38wwHIfb7UJ2KbMhYXa3jRrU0blh46DeuoZ1/exec"
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyOaxTsdCHk04O_ihJpDHqMrtniKdoYTXMExKh6kZ_rl8YZm8n54P2p7iT55N74JwYVBw/exec"
       const formattedToday = dd + '/' + mm + '/' + yyyy + " " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
       formData.append("created_at", formattedToday);
       fetch(scriptURL, {
